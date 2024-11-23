@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+$light: #81849a67;
+$gray: #00000047;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navBar {
+  background-color: $light;
+  padding: 1rem 3rem;
+  border-bottom: 1px solid $gray;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden; 
+}
+
+.flex{
+    display: flex;
+}
+.content{
+  width: 220%;
+  height: calc(100vh - 100px); /* Altura dinámica según tu diseño */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  width: 14rem;
+  height: calc(100vh - 52px);
+  border-right: 1px solid gray;
+  ul {
+    list-style-type: none;
+    padding: 1rem 2rem;
+    li {
+      margin-bottom: 1rem;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

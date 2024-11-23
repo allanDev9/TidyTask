@@ -1,0 +1,46 @@
+.section-prestamo .title-prestamos {
+    display: flex;
+    justify-content: center;
+    color: blue;
+    margin-top: 20px;
+}
+.container-prestamos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px 50px 50px;
+  background-color: #ffffffc1;
+  border: 1px solid #000000;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.234);
+  border-radius: 5px;
+  padding: 20px;
+  width: 90%;
+}
+.container-prestamos .card {
+  width: 25%;
+  margin: 10px;
+}
+.container-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.card-prestamos{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-top: 20px;
+}
+.container-list .card-prestamos{
+  background-color: transparent;
+  border: none;
+}
+
+.button-dialog {
+  width: 150px;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  
+}
+

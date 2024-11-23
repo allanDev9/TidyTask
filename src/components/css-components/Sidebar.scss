@@ -1,0 +1,56 @@
+$active : #001eff;
+$light : #13063e;
+$title: #01d0ff;
+
+.sidebar{
+    background-color: #000000;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.324);
+    border: none;
+    width: 40%;
+}
+.navBar{
+  background-color: $light;
+  padding: 1rem 3rem;
+  color: #ffffff;
+  box-shadow: 15px 15px 15px rgba(0,0,0,0.324);
+  border: none;
+  
+  h1{
+    position: relative;
+    left: -25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 5px;
+    color: $title;
+    font-weight: bold;
+  }
+}
+.sidebar a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+ul li{
+  margin-bottom: 10px;
+}
+ul li a{
+  display: flex;
+  align-items: center;
+}
+
+  .sidebar li.active {
+    background-color: #0c00f1; 
+    width: 180px;
+    padding: 5px 10px 5px;
+
+  }
+  .sidebar li{
+    padding: 5px;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+    margin-left: -15px;
+  }
+  .sidebar li:hover{
+    background-color: #001eff3e;
+    width: 180px;
+  }
