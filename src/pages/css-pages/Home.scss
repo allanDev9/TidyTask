@@ -70,3 +70,45 @@ img {
   text-align: left; /* Centra el texto */
   margin-bottom: 4rem;
 }
+@media (max-width: 800px) {
+  .container-card-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 70px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.234);
+    background-color: rgba(255, 255, 255, 0.714);
+  }
+  img{
+    width: 20vh;
+    margin-top: 20px;
+  }
+
+  .card-container {
+    display: flex; /* Alinea los elementos hijos en fila */
+    flex-direction: column; /* Dirección horizontal */
+    justify-content: center; /* Espacio uniforme entre las tarjetas */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente fila si no caben */
+    gap: 20px; /* Espaciado entre tarjetas */
+    padding: 20px; /* Espaciado interno del contenedor */
+    margin-right: 40px;
+  }
+  
+  /* Estilo para las tarjetas individuales */
+  .card {
+    flex: 1 1 calc(33.33% - 40px); /* Tamaño dinámico, ajusta 3 por fila */
+    max-width: 200vh;    
+    margin: 10px; /* Margen entre tarjetas */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para resaltar las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    text-align: left; /* Centra el texto */
+    margin-bottom: 4rem;
+  }
+}
