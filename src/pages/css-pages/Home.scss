@@ -140,9 +140,47 @@ img {
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.234);
     background-color: rgba(255, 255, 255, 0.714);
   }
+  .text-bienvenida {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .calendar{
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+  .container-image{
+    margin-top: -20px;
+    width: 200px;
+  }
   img{
     width: 15vh;
     margin-top: 20px;
+  }
+  .card-container {
+    display: flex; /* Alinea los elementos hijos en fila */
+    flex-direction: column; /* Dirección horizontal */
+    justify-content: center; /* Espacio uniforme entre las tarjetas */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente fila si no caben */
+    gap: 20px; /* Espaciado entre tarjetas */
+    padding: 20px; /* Espaciado interno del contenedor */
+    width: 280px;
+    margin-left: -30px;
+  }
+  
+  /* Estilo para las tarjetas individuales */
+  .card {
+    flex: 1 1 calc(33.33% - 40px); /* Tamaño dinámico, ajusta 3 por fila */
+    margin: 10px; /* Margen entre tarjetas */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para resaltar las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    text-align: left; /* Centra el texto */
+    margin-bottom: 4rem;
   }
  
 }
