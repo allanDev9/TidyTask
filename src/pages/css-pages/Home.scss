@@ -73,20 +73,33 @@ img {
 @media (max-width: 800px) {
   .container-card-principal {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     padding: 15px;
     border: 1px solid black;
     border-radius: 10px;
-    margin-left: 40px;
-    margin-right: 70px;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.234);
     background-color: rgba(255, 255, 255, 0.714);
+    margin:auto;
+    max-width: 90%;
   }
-  img{
-    width: 20vh;
-    margin-top: 20px;
+  
+  .text-bienvenida {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .calendar{
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+  .container-image{
+    margin-top: -20px;
+    width: 200px;
   }
 
   .card-container {
@@ -111,4 +124,25 @@ img {
     text-align: left; /* Centra el texto */
     margin-bottom: 4rem;
   }
+}
+@media (max-width: 400px){
+  .container-card-principal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 1px;
+    margin-right: 5px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.234);
+    background-color: rgba(255, 255, 255, 0.714);
+  }
+  img{
+    width: 15vh;
+    margin-top: 20px;
+  }
+ 
 }
