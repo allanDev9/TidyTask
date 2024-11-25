@@ -21,8 +21,8 @@ const Miembros = () => {
       <h1 style={{ display: "flex", justifyContent: "center", color: "blue" }}>
         Miembros
       </h1>
-      <main
-        className="cont"
+      <div
+        className="container-datatable-miembros"
         style={{
           display: "flex",
           justifyContent: "center",
@@ -32,7 +32,7 @@ const Miembros = () => {
         <div className="row" style={{ height: "30%" }}>
           <Person data={persons} />
         </div>
-      </main>
+      </div>
     </section>
   );
 };
