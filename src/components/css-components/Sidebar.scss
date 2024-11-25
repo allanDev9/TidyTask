@@ -1,6 +1,7 @@
 $active: #001eff;
 $light: #13063e;
 $title: #01d0ff;
+$gray: rgb(245, 245, 245);
 
 .sidebar {
   background-color: #000000;
@@ -11,9 +12,8 @@ $title: #01d0ff;
 .navBar {
   background-color: $light;
   padding: 1rem 3rem;
-  color: #ffffff;
-  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.324);
-  border: none;
+  margin: 0; /* Asegúrate de que no haya margen adicional */
+  box-sizing: border-box; /* Para que padding no afecte el tamaño total */
 
   h1 {
     position: relative;
