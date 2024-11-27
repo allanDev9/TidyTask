@@ -37,16 +37,16 @@ function Person({ data }) {
   };
 
   return (
-    <div className="card" style={{ marginTop: '40px', padding: '30px', border: '1px solid black'}}>
-      <div className="search-input flex justify-content-center">
-        <AutoComplete field="name" value={selectedCountry} placeholder="Buscar" suggestions={filteredCountries} completeMethod={search} onChange={handleInputChange}/>
+      <div className="card" style={{ marginTop: '40px', padding: '30px', border: '1px solid black' }}>
+        <div className="search-input flex justify-content-center">
+          <AutoComplete field="name" value={selectedCountry} placeholder="Buscar" suggestions={filteredCountries} completeMethod={search} onChange={handleInputChange} />
+        </div>
+        <DataTable value={datatable} className="custom-datatable" selectionMode="single" paginator rows={5} rowsPerPageOptions={[5, 10, 25, 50]}>
+          <Column className="color-column" field="code" header="Código"></Column>
+          <Column className="color-column" field="name" header="Nombre"></Column>
+          <Column className="color-column" field="category" header="Rol"></Column>
+        </DataTable>
       </div>
-      <DataTable value={datatable} className="custom-datatable" selectionMode="single" paginator rows={5} rowsPerPageOptions={[5, 10, 25, 50]}>
-        <Column className="color-column" field="code" header="Código"></Column>
-        <Column className="color-column" field="name" header="Nombre"></Column>
-        <Column className="color-column" field="category" header="Rol"></Column>
-      </DataTable>
-    </div>
   );
 }
 
