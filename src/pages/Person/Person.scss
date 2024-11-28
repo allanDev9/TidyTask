@@ -13,3 +13,8 @@ $boton: red;
   margin-right: 10rem;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .search-input {
+    margin-right: 0;
+  }
+}
