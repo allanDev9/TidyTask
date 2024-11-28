@@ -21,11 +21,10 @@ body {
 .flex{
   display: flex;
   height: 100%; /* Asegurar altura completa */
-  margin: 0; /* Eliminar márgenes */
-  padding: 0; /* Eliminar padding */
 }
 .content{
-  width:  100%;
+  flex: 1;
+  width: 100%;
   height: calc(100vh - 88px); /* Ajustar altura relativa al viewport menos la barra de navegación */
   overflow-y: auto; /* Habilitar scroll vertical */
   overflow-x: hidden; /* Evitar scroll horizontal */
