@@ -162,4 +162,7 @@ $gray: rgb(245, 245, 245);
     background-color: #001eff3e;
     width: 35px;
   }
+  .toggle-button {
+    z-index: -1; 
+  }
 }

@@ -78,17 +78,16 @@ img {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    padding: 15px;
+    padding: 0px;
+    padding-bottom: 30px;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.234);
     background-color: rgba(255, 255, 255, 0.714);
-    margin:auto;
     max-width: 90%;
   }
   
   .text-bienvenida {
-    margin: 20px;
     padding: 20px;
     text-align: center;
     font-size: 12px;
@@ -144,7 +143,7 @@ img {
     margin-top: 30px;
   }
   .text-bienvenida {
-    margin: 20px;
+    margin: 25px;
     padding: 20px;
     text-align: center;
     font-size: 12px;
@@ -160,7 +159,7 @@ img {
     width: 200px;
   }
   img{
-    width: 15vh;
+    width: 25vh;
     margin-top: 20px;
   }
   .card-container {
@@ -169,9 +168,9 @@ img {
     justify-content: center; /* Espacio uniforme entre las tarjetas */
     align-items: center;
     flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente fila si no caben */
-    gap: 20px; /* Espaciado entre tarjetas */
+    gap: 5px; /* Espaciado entre tarjetas */
     padding: 20px; /* Espaciado interno del contenedor */
-    width: 280px;
+    width: 350px;
     margin-left: -30px;
   }
   
