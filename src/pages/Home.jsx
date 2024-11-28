@@ -5,6 +5,8 @@ import { Calendar } from "primereact/calendar";
 import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
+import { Message } from 'primereact/message';
+import { InputText } from 'primereact/inputtext';
 
 const Home = () => {
   const [date, setDate] = useState(null);
@@ -25,16 +27,22 @@ const Home = () => {
           <p>Eligemos para administrar tu dinero</p>
           <div className="card-modal flex justify-content-center">
             <Button label="Registrarse" style={{ padding: '5px', borderRadius: '5px', width: '150px'}} icon="pi pi-external-link" onClick={() => setVisible(true)} />
-            <Dialog header="Header" visible={visible} style={{ width: '50vw' , height: '100vh', padding: '10px'}} onHide={() => {if (!visible) return; setVisible(false); }} footer={footerContent}>
-                <p className="m-0" style={{ padding: '20px'}}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <Dialog header="Ingresa tus datos" visible={visible} style={{ width: '50vw' , height: '100vh', padding: '10px'}} onHide={() => {if (!visible) return; setVisible(false); }} footer={footerContent}>
+            <div className="card-form">
+            <div className="flex flex-wrap align-items-center mb-3 gap-2">
+                <label htmlFor="username" className="p-sr-only">Username</label>
+                <InputText id="username" placeholder="Username" className="p-invalid mr-2" />
+                {/* <Message severity="error" text="Username is required" /> */}
+            </div>
+            <div className="flex flex-wrap align-items-center gap-2">
+                <label htmlFor="email" className="p-sr-only">Email</label>
+                <InputText id="email" placeholder="Email" className="p-invalid mr-2" />
+                {/* <Message severity="error" /> */}
+            </div>
+        </div>
           <div className="container-calendar flex justify-content-center">
             <Calendar className="calendar" placeholder="Selecciona" value={date} onChange={(e) => setDate(e.value)} />
           </div>
-                </p>
             </Dialog>
         </div>
         </section>

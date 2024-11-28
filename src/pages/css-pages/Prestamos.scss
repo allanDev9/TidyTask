@@ -42,5 +42,23 @@
   margin: 0 0.5rem;
   border-radius: 5px;
   
+}  
+
+@media (max-width: 500px){
+  .container-prestamos {
+    width: 100%;
+    margin-left: -5 px; 
+  }
+  .card-prestamos {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .container-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button-dialog {
+    width: 100%;
+  }
 }
 
