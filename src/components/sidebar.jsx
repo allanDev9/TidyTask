@@ -5,6 +5,7 @@ import { FaChartSimple } from "react-icons/fa6";
 import { IoPersonCircleOutline } from "react-icons/io5";
 import "./css-components/Sidebar.scss";
 import { MdMenu } from "react-icons/md";
+
 const Sidebar = () => {
   const [activeLink, setActiveLink] = useState('');
   const [isVisible, setIsVisible] = useState(true); // Estado para mostrar/ocultar el Sidebar
@@ -21,7 +22,7 @@ const Sidebar = () => {
     <div className="sidebar-container">
       {/* Botón para alternar visibilidad del Sidebar */}
       <button className="toggle-button" onClick={toggleSidebar}>
-        <MdMenu style={{ fontSize: '30px'}}/>
+        <MdMenu style={{ fontSize: '30px' }} />
       </button>
 
       {/* Sidebar con visibilidad controlada */}
@@ -30,17 +31,26 @@ const Sidebar = () => {
           <ul>
             <li className={activeLink === "/home" ? "active" : ""}>
               <Link to="/home" onClick={() => handleActiveLink("/home")}>
-                <FaHome className="me-2" /> Inicio
+                <div className="icon-container">
+                  <FaHome />
+                </div>
+                <span className="text">Inicio</span>
               </Link>
             </li>
             <li className={activeLink === "/prestamos" ? "active" : ""}>
               <Link to="/prestamos" onClick={() => handleActiveLink("/prestamos")}>
-                <FaChartSimple className="me-2" /> Prestamos
+                <div className="icon-container">
+                  <FaChartSimple />
+                </div>
+                <span className="text">Prestamos</span>
               </Link>
             </li>
             <li className={activeLink === "/miembros" ? "active" : ""}>
               <Link to="/miembros" onClick={() => handleActiveLink("/miembros")}>
-                <IoPersonCircleOutline className="me-2" /> Miembros
+                <div className="icon-container">
+                  < IoPersonCircleOutline className="icon" />
+                </div>
+                <span className="text">Miembros</span>
               </Link>
             </li>
           </ul>

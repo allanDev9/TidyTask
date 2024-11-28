@@ -30,6 +30,18 @@ $gray: rgb(245, 245, 245);
   height: 40px;
   border-radius: 999px;
 }
+.sidebar ul li .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px; /* Espacio fijo para el icono */
+}
+
+.sidebar ul li .text {
+  margin-left: 15px; /* Espacio entre el icono y el texto */
+  font-size: 1rem;
+  color: #ffffff;
+}
 
 .sidebar {
   background-color: #000000;
@@ -92,7 +104,7 @@ $gray: rgb(245, 245, 245);
   background-color: #001eff3e;
   width: 180px;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
   .navBar {
     background-color: $light;
@@ -113,20 +125,31 @@ $gray: rgb(245, 245, 245);
   }
 
   .sidebar {
-    width: 450px;
+    width: 60px;
     ul li {
       margin-bottom: 5px;
+      margin-left: -25px;
     }
-    ul li a {
-      display: flex;
-      align-items: left;
-      text-align: left;
-      font-size: 10px;
-    }
+  }
+  .sidebar {
+    width: 50px; /* Reduce el ancho del sidebar */
+  }
+
+  .sidebar ul li .text {
+    display: none; /* Oculta el texto */
+  }
+
+  .sidebar ul li .icon {
+    margin-right: 10px; /* Centra el ícono */
+    font-size: 1.5rem;
+  }
+
+  .sidebar ul li {
+    justify-content: center; /* Centra los íconos vertical y horizontalmente */
   }
   .sidebar li.active {
     background-color: #0c00f1;
-    width: 75px;
+    width: 35px;
     padding: 5px 10px 5px;
   }
   .sidebar li {
@@ -137,6 +160,6 @@ $gray: rgb(245, 245, 245);
   }
   .sidebar li:hover {
     background-color: #001eff3e;
-    width: 75px;
+    width: 35px;
   }
 }
