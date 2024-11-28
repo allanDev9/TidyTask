@@ -25,13 +25,15 @@ body {
   padding: 0; /* Eliminar padding */
 }
 .content{
-  flex: 1;
-  height: calc(100vh - 88px);
-  margin: 0;
-  padding: 16px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  box-sizing: border-box;
+  width:  100%;
+  height: calc(100vh - 88px); /* Ajustar altura relativa al viewport menos la barra de navegación */
+  overflow-y: auto; /* Habilitar scroll vertical */
+  overflow-x: hidden; /* Evitar scroll horizontal */
+  margin: 0; /* Eliminar márgenes */
+  padding: 0; /* Eliminar paddings */
+  position: relative; /* Asegura que no se solapen elementos */
+  top: -50px; /* Posición inicial en la parte superior */
+  margin-left: 0%;
 }
 
 .sidebar {
