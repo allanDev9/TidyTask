@@ -23,11 +23,6 @@ const Miembros = () => {
       </h1>
       <div
         className="container-datatable-miembros"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
       >
         <div className="row" style={{ height: "30%" }}>
           <Person data={persons} />

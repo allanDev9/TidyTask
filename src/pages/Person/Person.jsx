@@ -45,7 +45,7 @@ function Person({ data }) {
           <Column className="color-column" field="code" header="Código"></Column>
           <Column className="color-column" field="name" header="Nombre"></Column>
           <Column className="color-column" field="category" header="Rol"></Column>
-        </DataTable>Col
+        </DataTable>
       </div>
   );
 }

@@ -72,6 +72,33 @@ img {
   text-align: left; /* Centra el texto */
   margin-bottom: 4rem;
 }
+.container-botones{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-top: 40px;
+}
+.btn-guardar{
+  background-color: blue;
+
+}
+.btn-cancelar{
+  background-color: rgb(255, 5, 5);
+  color: white;
+
+}
+.btn-guardar, .btn-cancelar{
+  margin: 10px;
+  padding: 4px;
+  border-radius: 5px;
+}
+.btn-guardar:hover{
+  background-color: rgba(0, 38, 255, 0.742);
+}
+.btn-cancelar:hover{
+  background-color: rgba(255, 5, 5, 0.64);
+}
 @media (max-width: 800px) {
   .container-card-principal {
     display: flex;
