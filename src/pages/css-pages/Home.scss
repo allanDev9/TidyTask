@@ -99,6 +99,11 @@ img {
 .btn-cancelar:hover{
   background-color: rgba(255, 5, 5, 0.64);
 }
+.message-registed{
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}
 @media (max-width: 800px) {
   .container-card-principal {
     display: flex;

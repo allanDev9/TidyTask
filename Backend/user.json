@@ -1,0 +1,28 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Allan",
+            "apellido": "Garcia",
+            "rol": "administrador"
+        },
+        {
+            "id": 2,
+            "nombre": "Juan",
+            "apellido": "Guerra",
+            "rol": "empleado"
+        },
+        {
+            "id": 3,
+            "nombre": "Helman",
+            "apellido": "Alvarada",
+            "rol": "no hace nada"
+        }
+    ],
+    "empleados": [
+        {
+            "id": 1,
+            "nombre": "Lesly"
+        }
+    ]
+}
