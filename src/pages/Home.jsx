@@ -41,7 +41,7 @@ const Home = () => {
             <Button
               label={isBotonResgister}
               style={{
-                padding: "5px", borderRadius: "5px", width: "190px",marginLeft: '-50px', backgroundColor: isBotonColor === 'success' 
+                padding: "5px", borderRadius: "5px", width: "190px",marginLeft: '-10px', backgroundColor: isBotonColor === 'success' 
                 ? 'green' : 'default'
                }}
               icon="pi pi-external-link"
