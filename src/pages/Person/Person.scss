@@ -4,21 +4,16 @@ $boton: red;
 .color-column{
   color: $column;
 }
-.card{
-  text-align: center;
-
-}
-.search-input{
+.container-search{
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 30px;
-  margin-right: 10rem;
-  border-radius: 5px;
+  .search-input{
+    height: 30px;
+  }
 }
 @media (max-width: 500px) {
   .search-input {
     margin-right: 0;
-  }
-  .custom-datatable{
-    
-
   }
 }

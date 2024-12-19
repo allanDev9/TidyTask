@@ -13,13 +13,11 @@ const Home = () => {
   const [isBotonResgister, setBotonResgister] = useState('Registrarse');
   const [isBotonColor, setBotonColor] = useState('success');
 
-  // Estados para los campos de entrada
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   
-  // Manejo del registro
   const handleRegister = () => {
     if (!firstName || !lastName || !email || !password) {
       alert("Todos los campos son obligatorios");

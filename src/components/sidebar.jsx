@@ -8,24 +8,22 @@ import { MdMenu } from "react-icons/md";
 
 const Sidebar = () => {
   const [activeLink, setActiveLink] = useState('');
-  const [isVisible, setIsVisible] = useState(true); // Estado para mostrar/ocultar el Sidebar
+  const [isVisible, setIsVisible] = useState(true); 
 
   const handleActiveLink = (link) => {
     setActiveLink(link);
   };
 
   const toggleSidebar = () => {
-    setIsVisible(!isVisible); // Alterna la visibilidad
+    setIsVisible(!isVisible);
   };
 
   return (
     <div className="sidebar-container">
-      {/* Botón para alternar visibilidad del Sidebar */}
       <button className="toggle-button" onClick={toggleSidebar}>
         <MdMenu style={{ fontSize: '30px' }} />
       </button>
 
-      {/* Sidebar con visibilidad controlada */}
       {isVisible && (
         <div className="sidebar">
           <ul>

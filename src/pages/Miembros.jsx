@@ -1,30 +1,20 @@
 import { useState } from "react";
 import Person from "./Person/Person";
 import "./css-pages/Miembros.scss";
-import imagen3 from "./img/imagen3.png";
+import miembrosData from "./Json-Pages/miembros.json";
 
 const Miembros = () => {
-  const [persons, serPersons] = useState([
-    { code: "001", name: "Juan Pérez", category: "Administrador" },
-    { code: "002", name: "Tio Grandpa", category: "Administrador" },
-    { code: "003", name: "Juan Pérez", category: "Administrador" },
-    { code: "004", name: "Juan Pérez", category: "Administrador" },
-    { code: "005", name: "Juan Pérez", category: "Administrador" },
-    { code: "006", name: "Juan Pérez", category: "Administrador" },
-    { code: "007", name: "Juan Pérez", category: "Administrador" },
-    { code: "008", name: "Juan Pérez", category: "Administrador" },
-
-  ]);
+  const [persons, serPersons] = useState(miembrosData);
 
   return (
     <section className="container">
-      <h1 style={{ display: "flex", justifyContent: "center", color: "blue" }}>
+      <h1 style={{ display: "flex", justifyContent: "center", color: "black", fontWeight: 'bold' , marginTop: '30px'}}>
         Miembros
       </h1>
       <div
         className="container-datatable-miembros"
       >
-        <div className="row" style={{ height: "30%" }}>
+        <div className="row">
           <Person data={persons} />
         </div>
       </div>
