@@ -166,3 +166,12 @@ $gray: rgb(245, 245, 245);
     z-index: -1; 
   }
 }
+.sidebar-container .separador {
+  background-color: #ffffff; 
+  opacity: 0.5; 
+  position: relative;
+  top: 320px;
+  width: 120%;
+  height: 1px; 
+  right: 15px;
+}
